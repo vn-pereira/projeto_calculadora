@@ -1,0 +1,141 @@
+div{
+    display: inline-block;
+    justify-content: space-between; 
+    height: 400px;
+    width: 300px;
+    margin: 100px auto 100px auto;
+    background: rgb(105, 105, 185);
+    justify-content: center;
+    align-items: center;
+}
+
+#visor{
+    display: inline-block;
+    justify-content: space-between; 
+    height: 40px;
+    width: 90%;
+    margin: 50px 20px 10px 10px;
+    text-align: right;
+    background-color: #b9f0f1;
+}
+
+button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    justify-content: space-around; 
+    background: rgb(125, 203, 226);
+    color: white;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+/*#numUm{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#numDois{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#numTres{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#numQuatro{
+    display: block;
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#numCinco{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#numSeis{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#numSete{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#numOito{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#numNove{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+} */
+
+#numZero{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+/*
+#soma{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#subtracao{
+    background: rgb(125, 203, 226);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+} */
