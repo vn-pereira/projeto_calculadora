@@ -13,7 +13,7 @@
        <!--  <div id="display"></div> -->
         
        <div class="layout">
-            <input type="text" name="display" id="visor" />
+            <input readOnly type="number" name="display" id="visor" />
         </div>
        <!--<button id="soma">+</button>
         <button id="numeroUm">1</button>
@@ -21,9 +21,9 @@
 
         <script>
             //objeto calculadora
-            let calculadora = {};
-            calculadora.display = document.querySelector("#display");
-            let acumulador = "";
+            // let calculadora = {};
+            // calculadora.display = document.querySelector("#display");
+            // let acumulador = "";
 
             let div = document.querySelector("div");
             let botao = document.createElement("button");
@@ -31,128 +31,150 @@
             botao.setAttribute ("id", "numUm");
             div.appendChild(botao);
             botao = document.querySelector ("#numUm");
-            //botao.addEventListener("click", alerta);
+            botao.addEventListener("click", escrever);
 
             let botao2 = document.createElement("button");
             botao2.innerText = "2";
             botao2.setAttribute ("id", "numDois");
             div.appendChild(botao2);
             botao2 = document.querySelector ("#numDois");
-           // botao2.addEventListener("click", alerta);
+            botao2.addEventListener("click", escrever);
 
             let botao3 = document.createElement("button");
             botao3.innerText = "3";
             botao3.setAttribute ("id", "numTres");
             div.appendChild(botao3);
             botao3 = document.querySelector ("#numTres");
-            //botao3.addEventListener("click", alerta);
+            botao3.addEventListener("click", escrever);
 
             let botao4 = document.createElement("button");
             botao4.innerText = "4";
             botao4.setAttribute ("id", "numQuatro");
             div.appendChild(botao4);
             botao4 = document.querySelector ("#numQuatro");
-           // botao4.addEventListener("click", alerta);
+            botao4.addEventListener("click", escrever);
             
            let botao5 = document.createElement("button");
             botao5.innerText = "5";
             botao5.setAttribute ("id", "numCinco");
             div.appendChild(botao5);
             botao5 = document.querySelector ("#numCinco");
-           // botao4.addEventListener("click", alerta);
+            botao5.addEventListener("click", escrever);
 
            let botao6 = document.createElement("button");
             botao6.innerText = "6";
             botao6.setAttribute ("id", "numSeis");
             div.appendChild(botao6);
             botao6 = document.querySelector ("#numSeis");
-           // botao4.addEventListener("click", alerta);
+            botao6.addEventListener("click", escrever);
            
            let botao7 = document.createElement("button");
             botao7.innerText = "7";
             botao7.setAttribute ("id", "numSete");
             div.appendChild(botao7);
             botao7 = document.querySelector ("#numSete");
-           // botao4.addEventListener("click", alerta);
+            botao7.addEventListener("click", escrever);
             
            let botao8 = document.createElement("button");
             botao8.innerText = "8";
             botao8.setAttribute ("id", "numOito");
             div.appendChild(botao8);
             botao8 = document.querySelector ("#numOito");
-           // botao4.addEventListener("click", alerta);
+            botao8.addEventListener("click", escrever);
            
            let botao9 = document.createElement("button");
             botao9.innerText = "9";
             botao9.setAttribute ("id", "numNove");
             div.appendChild(botao9);
             botao9 = document.querySelector ("#numNove");
-           // botao4.addEventListener("click", alerta);
+            botao9.addEventListener("click", escrever);
 
            let botao0 = document.createElement("button");
             botao0.innerText = "0";
             botao0.setAttribute ("id", "numZero");
             div.appendChild(botao0);
             botao0 = document.querySelector ("#numZero");
-           // botao4.addEventListener("click", alerta);
-            
+            botao0.addEventListener("click", escrever);
+
            let botaoSoma = document.createElement("button");
             botaoSoma.innerText = "+";
             botaoSoma.setAttribute ("id", "soma");
             div.appendChild(botaoSoma);
             botaoSoma = document.querySelector ("#soma");
-           // botao4.addEventListener("click", alerta);
+            botaoSoma.addEventListener("click", escrever);
 
            let botaoSubtracao = document.createElement("button");
             botaoSubtracao.innerText = "-";
             botaoSubtracao.setAttribute ("id", "subtracao");
             div.appendChild(botaoSubtracao);
-            botaoSubtracao = document.querySelector ("#Subtracao");
-           // botao4.addEventListener("click", alerta);
+            botaoSubtracao = document.querySelector ("#subtracao");
+            botaoSubtracao.addEventListener("click", escrever);
 
             let botaoMultiplicar = document.createElement("button");
             botaoMultiplicar.innerText = "x";
             botaoMultiplicar.setAttribute ("id", "multiplica");
             div.appendChild(botaoMultiplicar);
-            botaoMultiplicar = document.querySelector ("#Multiplica");
-           // botao4.addEventListener("click", alerta);   
+            botaoMultiplicar = document.querySelector ("#multiplica");
+            botaoMultiplicar.addEventListener("click", escrever);   
 
            let botaoDivisao = document.createElement("button");
             botaoDivisao.innerText = "÷";
             botaoDivisao.setAttribute ("id", "divisao");
             div.appendChild(botaoDivisao);
-            botaoDivisao = document.querySelector ("#Divisao");
-           // botao4.addEventListener("click", alerta); 
+            botaoDivisao = document.querySelector ("#divisao");
+            botaoDivisao.addEventListener("click", escrever); 
 
            let botaoLimpa = document.createElement("button");
             botaoLimpa.innerText = "AC";
             botaoLimpa.setAttribute ("id", "limpa");
             div.appendChild(botaoLimpa);
-            botaoLimpa = document.querySelector ("#Limpa");
-           // botao4.addEventListener("click", alerta); 
+            botaoLimpa = document.querySelector ("#limpa");
+            botaoLimpa.addEventListener("click", limpar); 
+
+            let botaoIgual = document.createElement("button");
+            botaoIgual.innerText = "=";
+            botaoIgual.setAttribute ("id", "igual");
+            div.appendChild(botaoIgual);
+            botaoIgual = document.querySelector ("#igual");
+            botaoIgual.addEventListener("click", resultado);
 
            // botao.onclick = function() {
                // calculadora.display.innerText += 1;
             //}
 
-            botaoSoma.onclick = function() {
-                acumulador += calculadora.display.innerText;
-                acumulador += " + ";
-                calculadora.display.innerText = "";
+              // botaoSoma.onclick = function() {
+              // acumulador += calculadora.display.innerText;
+              // acumulador += " + ";
+              // calculadora.display.innerText = "";
+              //     }
+
+              // botaoIgual.onclick = function() {
+              // //TODO: checar se existe conteúdo dentro do display
+
+              // //colocando conteúdo do display no acumulador
+              // acumulador += calculadora.display.innerText;
+              // //resolvendo conta (conteúdo acumulador)
+              // let resultado = eval(acumulador);
+              // //colocando no display o conteúdo do acumulador
+              // calculadora.display.innerText = resultado;
+              // // limpando o acumulador
+              // acumulador = "";
+
+              // }
+
+            function limpar(){
+                document.getElementById('visor').value = '';
             }
 
-            botaoIgual.onclick = function() {
-                //TODO: checar se existe conteúdo dentro do display
+            function escrever(event){
+                document.getElementById('visor').value += event.target.innerText;
+            }
 
-                //colocando conteúdo do display no acumulador
-                acumulador += calculadora.display.innerText;
-                //resolvendo conta (conteúdo acumulador)
-                let resultado = eval(acumulador);
-                //colocando no display o conteúdo do acumulador
-                calculadora.display.innerText = resultado;
-                // limpando o acumulador
-                acumulador = "";
-
+            function resultado(){
+                let result = 0;
+                result = document.getELementById('visor').value;
+                document.getElementById('visor').value = '';
+                document.getElementById('visor').value = eval(resultado); 
             }
 
         </script>

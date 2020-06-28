@@ -3,7 +3,7 @@ div{
     justify-content: space-between; 
     height: 400px;
     width: 300px;
-    margin: 100px auto 100px auto;
+    margin: 100px auto 100px 500px;
     background: rgb(105, 105, 185);
     justify-content: center;
     align-items: center;
@@ -17,6 +17,8 @@ div{
     margin: 50px 20px 10px 10px;
     text-align: right;
     background-color: #b9f0f1;
+    font-size: 30px;
+    font-weight: bold; 
 }
 
 button{
@@ -112,16 +114,13 @@ button{
     font-family: Verdana;
     font-size: 20px;
 } */
-
-#numZero{
-    background: rgb(125, 203, 226);
-    color: white;
-    width: 120px;
-    height: 50px;
-    font-family: Verdana;
-    font-size: 20px;
 }
 /*
+#numZero{
+    width: 120px;
+    height: 50px;  
+}
+
 #soma{
     background: rgb(125, 203, 226);
     color: white;
@@ -139,3 +138,8 @@ button{
     font-family: Verdana;
     font-size: 20px;
 } */
+
+#resultado{
+    width: 120px;
+    height: 50px;  
+}
