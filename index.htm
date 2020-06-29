@@ -13,7 +13,7 @@
        <!--  <div id="display"></div> -->
         
        <div class="layout">
-            <input readOnly type="number" name="display" id="visor" />
+            <div id="visor"></div>
         </div>
        <!--<button id="soma">+</button>
         <button id="numeroUm">1</button>
@@ -161,20 +161,28 @@
               // acumulador = "";
 
               // }
+              
+                    let visor = document.getElementById('visor');
 
             function limpar(){
-                document.getElementById('visor').value = '';
+                visor.innerText = '';
             }
 
             function escrever(event){
-                document.getElementById('visor').value += event.target.innerText;
+                if (event.target.innerText == "x"){
+                    visor.innerText += "*" ;
+                }
+                else if(event.target.innerText == "÷"){
+                    visor.innerText += "/";
+                }else{ 
+                    visor.innerText += event.target.innerText;
+             }
             }
 
             function resultado(){
-                let result = 0;
-                result = document.getELementById('visor').value;
-                document.getElementById('visor').value = '';
-                document.getElementById('visor').value = eval(resultado); 
+                let result = '';
+                result = visor.innerText;
+                visor.innerText = eval(result); 
             }
 
         </script>
