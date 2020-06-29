@@ -47,6 +47,13 @@
             botao3 = document.querySelector ("#numTres");
             botao3.addEventListener("click", escrever);
 
+            let botaoDivisao = document.createElement("button");
+            botaoDivisao.innerText = "÷";
+            botaoDivisao.setAttribute ("id", "divisao");
+            div.appendChild(botaoDivisao);
+            botaoDivisao = document.querySelector ("#divisao");
+            botaoDivisao.addEventListener("click", escrever); 
+
             let botao4 = document.createElement("button");
             botao4.innerText = "4";
             botao4.setAttribute ("id", "numQuatro");
@@ -67,6 +74,13 @@
             div.appendChild(botao6);
             botao6 = document.querySelector ("#numSeis");
             botao6.addEventListener("click", escrever);
+
+            let botaoMultiplicar = document.createElement("button");
+            botaoMultiplicar.innerText = "x";
+            botaoMultiplicar.setAttribute ("id", "multiplica");
+            div.appendChild(botaoMultiplicar);
+            botaoMultiplicar = document.querySelector ("#multiplica");
+            botaoMultiplicar.addEventListener("click", escrever); 
            
            let botao7 = document.createElement("button");
             botao7.innerText = "7";
@@ -89,6 +103,13 @@
             botao9 = document.querySelector ("#numNove");
             botao9.addEventListener("click", escrever);
 
+            let botaoSubtracao = document.createElement("button");
+            botaoSubtracao.innerText = "-";
+            botaoSubtracao.setAttribute ("id", "subtracao");
+            div.appendChild(botaoSubtracao);
+            botaoSubtracao = document.querySelector ("#subtracao");
+            botaoSubtracao.addEventListener("click", escrever);
+
            let botao0 = document.createElement("button");
             botao0.innerText = "0";
             botao0.setAttribute ("id", "numZero");
@@ -96,47 +117,26 @@
             botao0 = document.querySelector ("#numZero");
             botao0.addEventListener("click", escrever);
 
-           let botaoSoma = document.createElement("button");
-            botaoSoma.innerText = "+";
-            botaoSoma.setAttribute ("id", "soma");
-            div.appendChild(botaoSoma);
-            botaoSoma = document.querySelector ("#soma");
-            botaoSoma.addEventListener("click", escrever);
-
-           let botaoSubtracao = document.createElement("button");
-            botaoSubtracao.innerText = "-";
-            botaoSubtracao.setAttribute ("id", "subtracao");
-            div.appendChild(botaoSubtracao);
-            botaoSubtracao = document.querySelector ("#subtracao");
-            botaoSubtracao.addEventListener("click", escrever);
-
-            let botaoMultiplicar = document.createElement("button");
-            botaoMultiplicar.innerText = "x";
-            botaoMultiplicar.setAttribute ("id", "multiplica");
-            div.appendChild(botaoMultiplicar);
-            botaoMultiplicar = document.querySelector ("#multiplica");
-            botaoMultiplicar.addEventListener("click", escrever);   
-
-           let botaoDivisao = document.createElement("button");
-            botaoDivisao.innerText = "÷";
-            botaoDivisao.setAttribute ("id", "divisao");
-            div.appendChild(botaoDivisao);
-            botaoDivisao = document.querySelector ("#divisao");
-            botaoDivisao.addEventListener("click", escrever); 
-
-           let botaoLimpa = document.createElement("button");
+            let botaoLimpa = document.createElement("button");
             botaoLimpa.innerText = "AC";
             botaoLimpa.setAttribute ("id", "limpa");
             div.appendChild(botaoLimpa);
             botaoLimpa = document.querySelector ("#limpa");
-            botaoLimpa.addEventListener("click", limpar); 
+            botaoLimpa.addEventListener("click", limpar);
 
             let botaoIgual = document.createElement("button");
             botaoIgual.innerText = "=";
             botaoIgual.setAttribute ("id", "igual");
             div.appendChild(botaoIgual);
             botaoIgual = document.querySelector ("#igual");
-            botaoIgual.addEventListener("click", resultado);
+            botaoIgual.addEventListener("click", resultado); 
+
+            let botaoSoma = document.createElement("button");
+            botaoSoma.innerText = "+";
+            botaoSoma.setAttribute ("id", "soma");
+            div.appendChild(botaoSoma);
+            botaoSoma = document.querySelector ("#soma");
+            botaoSoma.addEventListener("click", escrever); 
 
            // botao.onclick = function() {
                // calculadora.display.innerText += 1;
